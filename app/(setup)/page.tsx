@@ -1,6 +1,7 @@
 import { initialProfile } from '@/lib/initial-profile';
 import { db } from '@/lib/db';
 import { redirect } from 'next/navigation';
+import { InitialModal } from '@/components/modals/initial-modal';
 
 const SetupPage = async () => {
     const profile = await initialProfile();
@@ -21,10 +22,7 @@ const SetupPage = async () => {
 
 
     return (
-        <div>
-        <h1>Setup</h1>
-        <p>Setup your account</p>
-        </div>
+        <InitialModal />
     );
 }
 
