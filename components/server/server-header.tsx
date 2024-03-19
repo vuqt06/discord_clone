@@ -11,7 +11,7 @@ interface ServerHeaderProps {
     role?: MemberRole;
 }
 
-export const ServerHeader = async ({
+export const ServerHeader = ({
     server,
     role,
 }: ServerHeaderProps) => {
